@@ -12,9 +12,9 @@ function CartItem(props) {
         <p>{props.name}</p>
       </div>
       <div className={styles.productQty}>
-        <button>+</button>
+        <button className={styles.productBtn}>+</button>
         <p>{props.qty}st </p>
-        <button>-</button>
+        <button className={styles.productBtn}>-</button>
       </div>
       <div className={props.productPrice}>
         <p>{props.price} kr </p>

@@ -23,3 +23,19 @@
 .productQty{
     display: flex;
 }
+
+.productBtn{
+    color: white;
+    background-color: rgb(220, 78, 26);
+    border-color: rgb(220, 78, 26);
+    border-style: solid;
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+    vertical-align: center;
+    margin: 1rem;
+}
+
+.productBtn:hover{
+    cursor: pointer;
+}
