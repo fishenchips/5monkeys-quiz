@@ -1,9 +1,9 @@
-import CustomerHeader from "./UI/customerCard/CustomerHeader";
+import CustomerCard from "./UI/customerCard/CustomerCard";
 
 function App() {
   return (
     <div className="App">
-      <CustomerHeader />
+      <CustomerCard />
     </div>
   );
 }
