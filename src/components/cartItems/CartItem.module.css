@@ -1,0 +1,25 @@
+.productDiv{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted gray;
+    background-color: white;
+}
+
+.productImg{
+    height: 50px;
+    border: 1px solid blue;
+}
+
+.productImg>img{
+    height: 100%;
+    width: auto;
+}
+
+.productName{
+    display: flex;
+    flex-direction: column;
+}
+
+.productQty{
+    display: flex;
+}
