@@ -1,13 +1,17 @@
 import React from "react";
+import CustomerContact from "./CustomerContact";
 import CustomerHeader from "./CustomerHeader";
+import CustomerName from "./CustomerName";
 import SSNCard from "./SSNCard";
 
 function CustomerCard() {
   return (
-    <div>
+    <aside>
       <CustomerHeader />
       <SSNCard />
-    </div>
+      <CustomerName />
+      <CustomerContact />
+    </aside>
   );
 }
 

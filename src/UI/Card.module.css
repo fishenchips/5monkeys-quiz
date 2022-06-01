@@ -1,6 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .card{
-    background-color: whitesmoke;
+    background-color: rgb(246, 246, 246);
     margin: 0.5rem;
     padding: 2rem;
-    width: 20vw;
+    width: 25vw;
 }
