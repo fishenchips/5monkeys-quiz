@@ -4,6 +4,7 @@ import styles from "./Cart.module.css";
 import first from "./../../assets/Bosch700E.jpg";
 import second from "./../../assets/BoschSticksagBlad.jpg";
 import CartItem from "./CartItem";
+import { useState } from "react";
 
 const DUMMY_ITEMS = [
   {
@@ -25,10 +26,19 @@ const DUMMY_ITEMS = [
 ];
 
 function Cart() {
+  const [cartItems, setCartItems] = useState(DUMMY_ITEMS);
+
+  const increaseQty = (item) => {
+    item.qty++;
+    setCartItems([...cartItems]);
+
+    console.log(cartItems);
+  };
+
   return (
     <div className={styles.cart}>
       <div>
-        {DUMMY_ITEMS.map((item) => (
+        {cartItems.map((item) => (
           <CartItem
             key={item.id}
             brand={item.brand}
@@ -36,6 +46,8 @@ function Cart() {
             qty={item.qty}
             price={item.price}
             img={item.img}
+            increaseQty={increaseQty}
+            item={item}
           />
         ))}
       </div>
