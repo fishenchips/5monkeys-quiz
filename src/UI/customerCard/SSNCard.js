@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "../Card";
+import styles from "./SSNCard.module.css";
 
 function SSNCard() {
   return (
     <Card>
-      <label>PERSONNUMMER:</label>
+      <label className={styles.label}>PERSONNUMMER:</label>
       <form>
         <input type="number" min="0" max="9" maxLength="6"></input>
         <h2>-</h2>

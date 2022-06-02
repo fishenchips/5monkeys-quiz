@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./CartItem.module.css";
 
 function CartItem(props) {
+  const increaseQty = () => {};
+
   return (
     <div className={styles.productDiv}>
       <div className={styles.productImg}>
