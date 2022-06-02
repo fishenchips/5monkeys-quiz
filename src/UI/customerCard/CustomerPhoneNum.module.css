@@ -1,0 +1,24 @@
+.phoneDiv{
+    display: flex;
+    background-color: lightgray;
+    border: 1px solid blue;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-bottom: -1.5rem;
+}
+
+.phoneForm{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.phoneLabel{
+    font-size: 0.7rem;
+}
+
+.changePhone{
+    cursor: pointer;
+    border: 1px solid green;
+    display: flex;
+}

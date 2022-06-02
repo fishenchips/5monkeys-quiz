@@ -7,6 +7,7 @@ function Cart() {
   return (
     <div className={styles.cart}>
       <CartItems />
+      <section className={styles.sectionBreak}></section>
       <CartDelivery />
     </div>
   );

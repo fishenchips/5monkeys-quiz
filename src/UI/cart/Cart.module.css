@@ -3,3 +3,8 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
+.sectionBreak{
+    height: 40vh;
+    border: 1px solid green;
+}
