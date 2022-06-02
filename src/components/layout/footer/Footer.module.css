@@ -1,0 +1,18 @@
+.footer{
+    color: white;
+    height: 15vh;
+    background-color: rgb(211, 138, 3);
+    display: flex;  
+    align-items: center;  
+}
+
+.footerBtn {
+    cursor: pointer;
+    margin-left: 3rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.footerText{
+    font-size: 1.6rem;
+}
