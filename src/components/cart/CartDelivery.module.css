@@ -1,7 +1,13 @@
 .deliveryDiv{
-    border-top: 1px dotted gray;
-    border-bottom: 1px dotted gray;
+    border-top: 2px dotted lightgray;
+    border-bottom: 2px dotted lightgray;
     margin: 1rem;
+}
+
+.icon{
+    font-size: 1.5rem;
+    color: rgb(152, 152, 152);
+    width: 2rem;
 }
 
 div.deliveryDiv > div.deliveryChoice > input {
@@ -9,13 +15,14 @@ div.deliveryDiv > div.deliveryChoice > input {
 }
 
 div.deliveryDiv > div.deliveryChoice > img {
-display: inline-block;
+    display: inline-block;
 	height:20px;
 	width:20px ;
 	background: none;
     border: 2.5px solid orange;
     border-radius: 50%;
     border-collapse: separate; 
+    
 }
 
 div.deliveryDiv > div.deliveryChoice > input:checked + img {
@@ -29,10 +36,44 @@ div.deliveryDiv > div.deliveryChoice > input:checked + img {
     padding: 0.5rem;
 }
 
+.label{
+    margin-left: 1rem;
+}
+
 .deliveryFee{
     float: right;
+    font-size: 1.2rem;
 }
 
 .deliveryBreak{
-    border-bottom: 1px dotted gray;
+    border-bottom: 2px dotted lightgray;
+}
+
+.checkoutDiv{
+    float: right;
+    margin-right: 1rem;
+    display:flex;
+    border: 1px solid green;
+}
+
+.checkoutText{
+    margin-right: 2.5rem;
+}
+
+.checkoutSumText {
+    font-size: 1.7rem;
+}
+.checkoutTaxText{
+    font-size: 0.75rem;
+    float: right;
+}
+
+.totalSum{
+    font-size: 1.7rem;
+
+}
+.taxSum{
+    font-size: 0.75rem;
+    float: right;
+
 }

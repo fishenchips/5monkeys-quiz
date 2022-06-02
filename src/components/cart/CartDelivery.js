@@ -23,30 +23,49 @@ function CartDelivery(props) {
     <>
       <div className={styles.deliveryDiv}>
         <div className={styles.deliveryChoice}>
-          <FontAwesomeIcon icon={faTruck} flip="horizontal" />
+          <FontAwesomeIcon
+            icon={faTruck}
+            flip="horizontal"
+            className={styles.icon}
+          />
           <input type="radio" name="delivery" id="home" value="home" />
           <img />
-          <label htmlFor="home" id="home" onClick={addDeliveryFee}>
+          <label
+            htmlFor="home"
+            id="home"
+            className={styles.label}
+            onClick={addDeliveryFee}
+          >
             Hemleverans
           </label>
           <span className={styles.deliveryFee}>{deliveryFee} kr</span>
         </div>
         <div className={styles.deliveryBreak}></div>
         <div className={styles.deliveryChoice}>
-          <FontAwesomeIcon icon={faHotel} />
+          <FontAwesomeIcon icon={faHotel} className={styles.icon} />
           <input type="radio" name="delivery" id="store" value="store" />
           <img />
-          <label htmlFor="store" id="store" onClick={removeDeliveryFee}>
+          <label
+            htmlFor="store"
+            id="store"
+            className={styles.label}
+            onClick={removeDeliveryFee}
+          >
             Hämta i butik
           </label>
         </div>
       </div>
-      <div>
-        <p>Att betala: {checkoutSum + extraFee} kr</p>
-        <p>
-          Varav moms: {Math.round((checkoutSum + extraFee) * 0.25)}
-          kr
-        </p>
+      <div className={styles.checkoutDiv}>
+        <div className={styles.checkoutText}>
+          <p className={styles.checkoutSumText}>Att betala:</p>
+          <p className={styles.checkoutTaxText}>Varav moms:</p>
+        </div>
+        <div>
+          <p className={styles.totalSum}>{checkoutSum + extraFee} kr</p>
+          <p className={styles.taxSum}>
+            {Math.round((checkoutSum + extraFee) * 0.25)} kr
+          </p>
+        </div>
       </div>
     </>
   );
