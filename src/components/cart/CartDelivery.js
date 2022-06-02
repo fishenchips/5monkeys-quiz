@@ -12,7 +12,7 @@ function CartDelivery(props) {
   props.cartItems.map((item) => (checkoutSum += item.qty * item.price));
 
   const addDeliveryFee = () => {
-    setExtraFee(79);
+    setExtraFee(deliveryFee);
   };
 
   const removeDeliveryFee = () => {
@@ -20,32 +20,35 @@ function CartDelivery(props) {
   };
 
   return (
-    <div className={styles.deliveryDiv}>
-      <div className={styles.deliveryChoice}>
-        <FontAwesomeIcon icon={faTruck} flip="horizontal" />
-        <input type="radio" name="delivery" id="home" value="home" />
-        <img />
-        <label htmlFor="home" id="home" onClick={addDeliveryFee}>
-          Hemleverans
-        </label>
-        <span className={styles.deliveryFee}>{deliveryFee} kr</span>
+    <>
+      <div className={styles.deliveryDiv}>
+        <div className={styles.deliveryChoice}>
+          <FontAwesomeIcon icon={faTruck} flip="horizontal" />
+          <input type="radio" name="delivery" id="home" value="home" />
+          <img />
+          <label htmlFor="home" id="home" onClick={addDeliveryFee}>
+            Hemleverans
+          </label>
+          <span className={styles.deliveryFee}>{deliveryFee} kr</span>
+        </div>
+        <div className={styles.deliveryBreak}></div>
+        <div className={styles.deliveryChoice}>
+          <FontAwesomeIcon icon={faHotel} />
+          <input type="radio" name="delivery" id="store" value="store" />
+          <img />
+          <label htmlFor="store" id="store" onClick={removeDeliveryFee}>
+            Hämta i butik
+          </label>
+        </div>
       </div>
-      <div className={styles.deliveryBreak}></div>
-      <div className={styles.deliveryChoice}>
-        <FontAwesomeIcon icon={faHotel} />
-        <input type="radio" name="delivery" id="store" value="store" />
-        <img />
-        <label htmlFor="store" id="store" onClick={removeDeliveryFee}>
-          Hämta i butik
-        </label>
+      <div>
+        <p>Att betala: {checkoutSum + extraFee} kr</p>
+        <p>
+          Varav moms: {Math.round((checkoutSum + extraFee) * 0.25)}
+          kr
+        </p>
       </div>
-
-      <p>Att betala: {checkoutSum + extraFee} kr</p>
-      <p>
-        Varav moms: {Math.round((checkoutSum + extraFee) * 0.25)}
-        kr
-      </p>
-    </div>
+    </>
   );
 }
 
