@@ -21,7 +21,12 @@ function CartItem(props) {
           +
         </button>
         <p>{props.qty}st </p>
-        <button className={styles.productBtn}>-</button>
+        <button
+          className={styles.productBtn}
+          onClick={() => props.decreaseQty(props.item)}
+        >
+          -
+        </button>
       </div>
       <div className={styles.productPrice}>
         <p>{productPrice} kr </p>

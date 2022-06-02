@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import CartDelivery from "./CartDelivery";
 import styles from "./Cart.module.css";
 import first from "./../../assets/Bosch700E.jpg";
 import second from "./../../assets/BoschSticksagBlad.jpg";
 import CartItem from "./CartItem";
-import { useState } from "react";
 
 const DUMMY_ITEMS = [
   {
@@ -32,7 +31,18 @@ function Cart() {
     item.qty++;
     setCartItems([...cartItems]);
 
-    console.log(cartItems);
+    console.log(item.qty);
+  };
+
+  const decreaseQty = (item) => {
+    //set minimum qty to 1
+    if (item.qty === 1) {
+      item.qty = 1;
+    } else {
+      item.qty--;
+    }
+    setCartItems([...cartItems]);
+    console.log(item.qty);
   };
 
   return (
@@ -47,13 +57,14 @@ function Cart() {
             price={item.price}
             img={item.img}
             increaseQty={increaseQty}
+            decreaseQty={decreaseQty}
             item={item}
           />
         ))}
       </div>
 
       <section className={styles.sectionBreak}></section>
-      <CartDelivery />
+      <CartDelivery cartItems={cartItems} />
     </div>
   );
 }
