@@ -23,12 +23,15 @@
     display: flex;
     flex-direction: column;
     width: 250px;
+    border: 1px solid green;
 }
 
 .productQty{
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+    margin-right: 1rem;
+    border: 1px solid orange;
  }
 
 .productBtn{
@@ -52,5 +55,6 @@
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+    border: 1px solid blue;
 
 }
