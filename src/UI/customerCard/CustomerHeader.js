@@ -5,7 +5,7 @@ import Card from "../Card";
 function CustomerHeader() {
   return (
     <Card>
-      <h1>Kunduppgifter</h1>
+      <p className={styles.header}>Kunduppgifter</p>
       <p>Hämta dina adressuppgifter genom att fylla i ditt personnummer.</p>
     </Card>
   );
