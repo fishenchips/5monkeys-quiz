@@ -1,3 +1,7 @@
 .label{
     font-size: 0.7rem;
 }
+
+.ssnForm{
+    display: flex;
+}

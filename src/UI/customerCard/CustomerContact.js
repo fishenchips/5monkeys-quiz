@@ -6,8 +6,10 @@ import styles from "./CustomerContact.module.css";
 function CustomerContact() {
   return (
     <Card>
-      <p className={styles.header}>Kontaktuppgifter</p>
-      <p>Fyll i ditt mobilnummer för att få ett SMS när din order är redo.</p>
+      <div className={styles.contactDiv}>
+        <p className={styles.header}>Kontaktuppgifter</p>
+        <p>Fyll i ditt mobilnummer för att få ett SMS när din order är redo.</p>
+      </div>
       <div>
         <CustomerPhoneNum />
       </div>
