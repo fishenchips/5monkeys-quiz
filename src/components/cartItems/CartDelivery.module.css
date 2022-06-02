@@ -1,0 +1,38 @@
+.deliveryDiv{
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    margin: 1rem;
+}
+
+div.deliveryDiv > div.deliveryChoice > input {
+    visibility: hidden;
+}
+
+div.deliveryDiv > div.deliveryChoice > img {
+display: inline-block;
+	height:20px;
+	width:20px ;
+	background: none;
+    border: 2.5px solid orange;
+    border-radius: 50%;
+    border-collapse: separate; 
+}
+
+div.deliveryDiv > div.deliveryChoice > input:checked + img {
+    background: url("./../../assets/checkmark.png");
+    background-repeat: no-repeat;
+	background-position:center center;
+	background-size:15px 15px;
+} 
+
+.deliveryChoice{
+    padding: 0.5rem;
+}
+
+.deliveryFee{
+    float: right;
+}
+
+.deliveryBreak{
+    border-bottom: 1px dotted gray;
+}
