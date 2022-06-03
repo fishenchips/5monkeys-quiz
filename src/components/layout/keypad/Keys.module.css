@@ -1,13 +1,12 @@
 .Row{
     display: flex;
-    border: 1px solid pink;
     justify-content: center;
     
 }
 
 .keyValue{
-    border: 1px solid blue;
     color: white;
+    font-size: 2.5rem;
     height: 4.5rem;
     width: 4.5rem;
     margin: 0.25rem;
