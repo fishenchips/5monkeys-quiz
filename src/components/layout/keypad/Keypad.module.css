@@ -1,4 +1,21 @@
 .aside{
     border: 1px solid green;
     width: 23vw;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.asideKeyPad{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 7rem;
+}
+
+.asideText{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.asideHeader{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }

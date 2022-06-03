@@ -29,7 +29,7 @@ function CartDelivery(props) {
             className={styles.icon}
           />
           <input type="radio" name="delivery" id="home" value="home" />
-          <img />
+          <img alt="" />
           <label
             htmlFor="home"
             id="home"
@@ -44,7 +44,7 @@ function CartDelivery(props) {
         <div className={styles.deliveryChoice}>
           <FontAwesomeIcon icon={faHotel} className={styles.icon} />
           <input type="radio" name="delivery" id="store" value="store" />
-          <img />
+          <img alt="" />
           <label
             htmlFor="store"
             id="store"
