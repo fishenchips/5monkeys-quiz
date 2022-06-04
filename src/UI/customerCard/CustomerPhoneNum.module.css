@@ -37,3 +37,23 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.phoneInput{
+    border: 0;
+    outline: 0; 
+    width: 12.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    background-color: lightgray;
+}
+
+.spanDiv{
+    display:flex;
+}
+.spanDiv > div {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    width: 1.33rem;
+    height:0.2rem;
+    border-left: 1px solid gray;
+}

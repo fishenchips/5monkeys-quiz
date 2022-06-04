@@ -22,12 +22,26 @@ function CustomerPhoneNum() {
         <div className={styles.phoneForm}>
           <label className={styles.phoneLabel}>MOBILNUMMER:</label>
           <form>
-            <input
-              type="text"
-              maxLength="9"
-              value={phoneNum}
-              onChange={handlePhoneNumber}
-            />
+            <div>
+              <input
+                className={styles.phoneInput}
+                type="text"
+                maxLength="9"
+                value={phoneNum}
+                onChange={handlePhoneNumber}
+              />
+              <div className={styles.spanDiv}>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
           </form>
         </div>
         <div className={styles.changePhone}>
