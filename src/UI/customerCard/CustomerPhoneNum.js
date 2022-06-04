@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
 import styles from "./CustomerPhoneNum.module.css";
+import { motion } from "framer-motion";
+import { formHover } from "./../animations/animations";
 
 function CustomerPhoneNum() {
   const [phoneNum, setPhoneNum] = useState("070125678");
@@ -11,7 +13,11 @@ function CustomerPhoneNum() {
   };
 
   return (
-    <div className={styles.phoneDiv}>
+    <motion.div
+      whileHover="hover"
+      variants={formHover}
+      className={styles.phoneDiv}
+    >
       <div className={styles.innerPhoneDiv}>
         <div className={styles.phoneForm}>
           <label className={styles.phoneLabel}>MOBILNUMMER:</label>
@@ -28,7 +34,7 @@ function CustomerPhoneNum() {
           <FontAwesomeIcon icon={faPencil} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Card from "../Card";
 import styles from "./SSNCard.module.css";
+import { motion } from "framer-motion";
+import { formHover } from "./../animations/animations";
 
 function SSNCard() {
   const [birthDate, setBirthDate] = useState("720324");
@@ -37,26 +39,28 @@ function SSNCard() {
   };
 
   return (
-    <Card>
-      <label className={styles.label}>PERSONNUMMER:</label>
-      <form className={styles.ssnForm}>
-        <input
-          className={styles.birthDateInput}
-          type="text"
-          maxLength="6"
-          value={birthDate}
-          onChange={handleBirthDate}
-        ></input>
-        <h2>-</h2>
-        <input
-          className={styles.lastFourInput}
-          type="text"
-          maxLength="4"
-          value={lastFour}
-          onChange={handleLastFour}
-        ></input>
-      </form>
-    </Card>
+    <motion.div whileHover="hover" variants={formHover}>
+      <Card>
+        <label className={styles.label}>PERSONNUMMER:</label>
+        <form className={styles.ssnForm}>
+          <input
+            className={styles.birthDateInput}
+            type="text"
+            maxLength="6"
+            value={birthDate}
+            onChange={handleBirthDate}
+          ></input>
+          <h2>-</h2>
+          <input
+            className={styles.lastFourInput}
+            type="text"
+            maxLength="4"
+            value={lastFour}
+            onChange={handleLastFour}
+          ></input>
+        </form>
+      </Card>
+    </motion.div>
   );
 }
 
