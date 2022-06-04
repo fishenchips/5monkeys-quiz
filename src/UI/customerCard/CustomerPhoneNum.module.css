@@ -24,7 +24,9 @@
 
 .changePhone{
     cursor: pointer;
-    border: 1px solid green;
     display: flex;
     align-items: center;
+    font-size: 1.3rem;
+    color: rgb(95, 93, 93);
+    margin-left: 5rem;
 }

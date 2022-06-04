@@ -2,7 +2,25 @@
     height: 15vh;
     margin-top: 3.5rem;
     color: white;
-    background-color: rgba(0, 0, 0, 0.45);
-    
-    
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.text{
+    font-size: 1.5rem;
+}
+
+.btn{
+    border: 3px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    cursor: pointer;
 }

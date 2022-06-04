@@ -8,7 +8,10 @@ function App() {
   return (
     <div
       className="App"
-      style={{ backgroundColor: "#ff6900", display: "flex" }}
+      style={{
+        backgroundColor: "#ff6900",
+        display: "flex",
+      }}
     >
       <div className="wrapper">
         <Header />

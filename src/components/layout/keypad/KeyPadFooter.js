@@ -6,8 +6,10 @@ import styles from "./KeyPadFooter.module.css";
 function KeyPadFooter() {
   return (
     <div className={styles.footer}>
-      <p>BESTÄLL</p>
-      <FontAwesomeIcon icon={faAngleRight} />
+      <p className={styles.text}>BESTÄLL</p>
+      <button className={styles.btn}>
+        <FontAwesomeIcon icon={faAngleRight} />
+      </button>
     </div>
   );
 }
