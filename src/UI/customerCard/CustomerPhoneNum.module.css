@@ -30,3 +30,10 @@
     color: rgb(95, 93, 93);
     margin-left: 5rem;
 }
+
+/* Remove the counter to the right */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
