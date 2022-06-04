@@ -43,21 +43,39 @@ function SSNCard() {
       <Card>
         <label className={styles.label}>PERSONNUMMER:</label>
         <form className={styles.ssnForm}>
-          <input
-            className={styles.birthDateInput}
-            type="text"
-            maxLength="6"
-            value={birthDate}
-            onChange={handleBirthDate}
-          ></input>
+          <div>
+            <input
+              className={styles.birthDateInput}
+              type="text"
+              maxLength="6"
+              value={birthDate}
+              onChange={handleBirthDate}
+            />
+            <div className={styles.spanDiv}>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
           <h2>-</h2>
-          <input
-            className={styles.lastFourInput}
-            type="text"
-            maxLength="4"
-            value={lastFour}
-            onChange={handleLastFour}
-          ></input>
+          <div>
+            <input
+              className={styles.lastFourInput}
+              type="text"
+              maxLength="4"
+              value={lastFour}
+              onChange={handleLastFour}
+            />
+            <div className={styles.spanDiv}>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
         </form>
       </Card>
     </motion.div>

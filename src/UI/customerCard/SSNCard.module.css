@@ -15,13 +15,30 @@ input::-webkit-inner-spin-button {
 .birthDateInput{
     border: 0;
     outline: 0;
-    border-bottom: 1px solid gray;
-    width: 10rem;
-    font-size: 1.5rem;
+    width: 8rem;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    background-color: whitesmoke;
 }
 
 .lastFourInput {
     border: 0;
     outline: 0; 
-    width: 5rem;
+    width: 5.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    background-color: whitesmoke;
+}
+
+.spanDiv{
+    display:flex;
+}
+.spanDiv > div {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    
+    /* 8rem / 6rem */
+    width: 1.33rem;
+    height:0.2rem;
+    border-left: 1px solid gray;
 }
