@@ -5,13 +5,16 @@ import styles from "./Header.module.css";
 function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.headerBtn}>
-        <HeaderBtn />
-        <p className={styles.extras}>Tillbehör</p>
+      <div className={styles.checkoutHeader}>
+        <div className={styles.headerBtn}>
+          <HeaderBtn />
+          <p className={styles.extras}>Tillbehör</p>
+        </div>
+        <div className={styles.headerTitle}>
+          <p> Kassa</p>
+        </div>
       </div>
-      <div className={styles.headerTitle}>
-        <p> Kassa</p>
-      </div>
+      <div className={styles.keyPadHeader}>hej</div>
     </header>
   );
 }
