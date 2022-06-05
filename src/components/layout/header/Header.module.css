@@ -1,6 +1,5 @@
 .header {
-    display: flex;
-    border: 1px solid white;
+    display: flex;    
     height: 15vh;
     color: white;
 }
@@ -13,7 +12,6 @@
 
 .headerBtn{
     display: flex;
-    border: 1px solid blue;
     height: 15vh;
     align-items: center;
     margin-left: 3rem;
@@ -34,5 +32,4 @@
     width: 20vw;
     float: right;
     background-color: rgba(0, 0, 0, 0.15);
-    border: 1px solid green;
 }

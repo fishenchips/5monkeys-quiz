@@ -14,7 +14,7 @@ function Header() {
           <p> Kassa</p>
         </div>
       </div>
-      <div className={styles.keyPadHeader}>hej</div>
+      <div className={styles.keyPadHeader}></div>
     </header>
   );
 }

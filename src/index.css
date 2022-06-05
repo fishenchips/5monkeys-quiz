@@ -20,6 +20,9 @@ code {
 .main{
   display: flex;
   background-color: #ff6900;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+}
+
+.checkout {
+  display: flex;
+  width: 80vw;
 }

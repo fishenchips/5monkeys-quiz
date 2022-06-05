@@ -6,7 +6,7 @@ import SSNCard from "./SSNCard";
 
 function CustomerCard() {
   return (
-    <aside>
+    <aside style={{ marginLeft: "2.5rem" }}>
       <CustomerHeader />
       <SSNCard />
       <CustomerName />

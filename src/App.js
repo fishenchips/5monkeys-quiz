@@ -16,13 +16,13 @@ function App() {
       <div className="wrapper">
         <Header />
         <main className="main">
-          <CustomerCard />
-          <Cart />
+          <div className="checkout">
+            <CustomerCard />
+            <Cart />
+          </div>
           <Keypad />
         </main>
-        <div className="footer">
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </div>
   );
