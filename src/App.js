@@ -18,10 +18,12 @@ function App() {
         <main className="main">
           <CustomerCard />
           <Cart />
+          <Keypad />
         </main>
-        <Footer />
+        <div className="footer">
+          <Footer />
+        </div>
       </div>
-      <Keypad />
     </div>
   );
 }

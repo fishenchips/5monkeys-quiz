@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Keypad.module.css";
 import Keys from "./Keys";
-import KeyPadFooter from "./KeyPadFooter";
+import KeyPadFooter from "../footer/KeyPadFooter";
 
 function Keypad() {
   return (
@@ -18,7 +18,7 @@ function Keypad() {
 
         <Keys />
       </div>
-      <KeyPadFooter />
+      {/*  <KeyPadFooter /> */}
     </aside>
   );
 }
