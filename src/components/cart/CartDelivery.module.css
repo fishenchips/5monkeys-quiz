@@ -25,7 +25,7 @@ div.deliveryDiv > div.deliveryChoice > img {
     
 }
 
-div.deliveryDiv > div.deliveryChoice > input:checked + img {
+div.deliveryDiv > div.deliveryChoice > input:checked  + img {
     background: url("./../../assets/checkmark.png");
     background-repeat: no-repeat;
 	background-position:center center;

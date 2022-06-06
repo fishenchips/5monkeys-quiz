@@ -17,6 +17,11 @@ code {
     monospace;
 }
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
 .main{
   display: flex;
   background-color: #ff6900;

@@ -4,6 +4,14 @@ import Header from "./components/layout/header/Header";
 import Keypad from "./components/layout/keypad/Keypad";
 import CustomerCard from "./UI/customerCard/CustomerCard";
 
+/* 
+  TODO
+
+  try flexing entire app so that footer doesnt end up in the middle of main
+  otherwise find correct height
+
+*/
+
 function App() {
   return (
     <div
@@ -11,6 +19,7 @@ function App() {
       style={{
         backgroundColor: "#ff6900",
         display: "flex",
+        width: "100vw",
       }}
     >
       <div className="wrapper">

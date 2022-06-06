@@ -31,6 +31,11 @@ function Cart() {
     item.qty++;
     setCartItems([...cartItems]);
 
+    //cap qty at 9
+    if (item.qty >= 9) {
+      item.qty = 9;
+    }
+
     console.log(item.qty);
   };
 
