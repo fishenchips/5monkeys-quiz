@@ -1,17 +1,18 @@
 .aside{
     width: 20vw;
     background-color: rgba(0, 0, 0, 0.15);
+    height: 40rem;
 }
 
 .asideKeyPad{
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .asideText{
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .asideHeader{

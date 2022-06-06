@@ -2,6 +2,8 @@
     border-top: 2px dotted lightgray;
     border-bottom: 2px dotted lightgray;
     margin: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .icon{
@@ -22,7 +24,6 @@ div.deliveryDiv > div.deliveryChoice > img {
     border: 2.5px solid orange;
     border-radius: 50%;
     border-collapse: separate; 
-    
 }
 
 div.deliveryDiv > div.deliveryChoice > input:checked  + img {
@@ -51,10 +52,10 @@ div.deliveryDiv > div.deliveryChoice > input:checked  + img {
 }
 
 .checkoutDiv{
+    margin-top: 1rem;
     float: right;
     margin-right: 1rem;
     display:flex;
-    border: 1px solid green;
 }
 
 .checkoutText{

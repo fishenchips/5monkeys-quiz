@@ -36,7 +36,19 @@ function SSNCard() {
     }
 
     setLastFour(e.target.value);
+
+    console.log(e.keyCode);
   };
+
+  /* doesnt work */
+  /*   const handleBackSpace = (e) => {
+    if (e.target.value.length === 0 && e.keyCode === 8) {
+      const form = e.target.form;
+      const index = [...form].indexOf(e.target);
+
+      form.elements[index - 1].focus();
+    }
+  }; */
 
   return (
     <motion.div whileHover="hover" variants={formHover}>
@@ -68,6 +80,7 @@ function SSNCard() {
               maxLength="4"
               value={lastFour}
               onChange={handleLastFour}
+              /* onKeyPress={handleBackSpace} */
             />
             <div className={styles.spanDiv}>
               <div></div>

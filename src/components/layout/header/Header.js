@@ -11,7 +11,7 @@ function Header() {
           <p className={styles.extras}>Tillbehör</p>
         </div>
         <div className={styles.headerTitle}>
-          <p> Kassa</p>
+          <p>Kassa</p>
         </div>
       </div>
       <div className={styles.keyPadHeader}></div>

@@ -25,6 +25,7 @@ code {
 .main{
   display: flex;
   background-color: #ff6900;
+  height: 40rem;
 }
 
 .checkout {
