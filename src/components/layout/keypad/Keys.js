@@ -2,33 +2,103 @@ import React from "react";
 import styles from "./Keys.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import { clickedKey } from "./../../../UI/animations/animations";
 
 function Keys() {
   return (
     <div>
       <div className={styles.Row}>
-        <div className={styles.keyValue}>1</div>
-        <div className={styles.keyValue}>2</div>
-        <div className={styles.keyValue}>3</div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          1
+        </motion.div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          2
+        </motion.div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          3
+        </motion.div>
       </div>
       <div className={styles.Row}>
-        <div className={styles.keyValue}>4</div>
-        <div className={styles.keyValue}>5</div>
-        <div className={styles.keyValue}>6</div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          4
+        </motion.div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          5
+        </motion.div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          6
+        </motion.div>
       </div>
       <div className={styles.Row}>
-        <div className={styles.keyValue}>7</div>
-        <div className={styles.keyValue}>8</div>
-        <div className={styles.keyValue}>9</div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          7
+        </motion.div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          8
+        </motion.div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          9
+        </motion.div>
       </div>
       <div className={styles.Row}>
-        <div className={styles.keyValue}>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
           <FontAwesomeIcon icon={faDeleteLeft} />
-        </div>
-        <div className={styles.keyValue}>0</div>
-        <div className={styles.keyValue}>
+        </motion.div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
+          0
+        </motion.div>
+        <motion.div
+          whileTap="press"
+          variants={clickedKey}
+          className={styles.keyValue}
+        >
           <FontAwesomeIcon icon={faCheck} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

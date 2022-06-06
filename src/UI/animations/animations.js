@@ -10,3 +10,11 @@ export const formHover = {
     },
   },
 };
+
+export const clickedKey = {
+  press: {
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    boxShadow: "0px 0px 8px rgb(245, 245, 245)",
+    textShadow: "0px 0px 8px rgb(245, 245, 245)",
+  },
+};
