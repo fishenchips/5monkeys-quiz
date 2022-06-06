@@ -32,17 +32,15 @@ function SSNCard() {
     if (e.target.value === "" || re.test(e.target.value)) {
       setLastFour(e.target.value);
     }
-  };
 
-  /* doesnt work */
-  /*   const handleBackSpace = (e) => {
-    if (e.target.value.length === 0 && e.keyCode === 8) {
+    //doesnt work perfectly, but cant get working check if e.target.length === 0 AND user pressed "backspace"
+    if (e.target.value.length === 0) {
       const form = e.target.form;
       const index = [...form].indexOf(e.target);
 
       form.elements[index - 1].focus();
     }
-  }; */
+  };
 
   return (
     <motion.div whileHover="hover" variants={formHover}>
@@ -74,7 +72,6 @@ function SSNCard() {
               maxLength="4"
               value={lastFour}
               onChange={handleLastFour}
-              /* onKeyPress={handleBackSpace} */
             />
             <div className={styles.spanDiv}>
               <div></div>
