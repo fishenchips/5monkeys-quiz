@@ -14,10 +14,8 @@ function SSNCard() {
 
     // if value is not blank, then test the regex
     if (e.target.value === "" || re.test(e.target.value)) {
-      setBirthDate({ value: e.target.value });
+      setBirthDate(e.target.value);
     }
-
-    setBirthDate(e.target.value);
 
     //if user has entered 6 digits, move to the next input
     if (e.target.value.length === 6) {
@@ -32,12 +30,8 @@ function SSNCard() {
     const re = /^[0-9\b]+$/;
 
     if (e.target.value === "" || re.test(e.target.value)) {
-      setLastFour({ value: e.target.value });
+      setLastFour(e.target.value);
     }
-
-    setLastFour(e.target.value);
-
-    console.log(e.keyCode);
   };
 
   /* doesnt work */

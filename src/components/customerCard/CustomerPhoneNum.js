@@ -9,7 +9,12 @@ function CustomerPhoneNum() {
   const [phoneNum, setPhoneNum] = useState("070125678");
 
   const handlePhoneNumber = (e) => {
-    setPhoneNum(e.target.value);
+    const re = /^[0-9\b]+$/;
+
+    // if value is not blank, then test the regex
+    if (e.target.value === "" || re.test(e.target.value)) {
+      setPhoneNum(e.target.value);
+    }
   };
 
   return (
