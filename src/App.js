@@ -2,15 +2,7 @@ import Cart from "./components/cart/Cart";
 import Footer from "./components/layout/footer/Footer";
 import Header from "./components/layout/header/Header";
 import Keypad from "./components/layout/keypad/Keypad";
-import CustomerCard from "./UI/customerCard/CustomerCard";
-
-/* 
-  TODO
-
-  try flexing entire app so that footer doesnt end up in the middle of main
-  otherwise find correct height
-
-*/
+import CustomerCard from "./components/customerCard/CustomerCard";
 
 function App() {
   return (

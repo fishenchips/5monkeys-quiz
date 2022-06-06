@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
 import styles from "./CustomerPhoneNum.module.css";
 import { motion } from "framer-motion";
-import { formHover } from "./../animations/animations";
+import { formHover } from "../../UI/animations/animations";
 
 function CustomerPhoneNum() {
   const [phoneNum, setPhoneNum] = useState("070125678");

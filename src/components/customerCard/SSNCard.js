@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Card from "../Card";
+import Card from "../../UI/Card";
 import styles from "./SSNCard.module.css";
 import { motion } from "framer-motion";
-import { formHover } from "./../animations/animations";
+import { formHover } from "../../UI/animations/animations";
 
 function SSNCard() {
   const [birthDate, setBirthDate] = useState("720324");

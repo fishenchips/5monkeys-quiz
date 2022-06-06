@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CustomerHeader.module.css";
-import Card from "../Card";
+import Card from "./../../UI/Card";
 
 function CustomerHeader() {
   return (
