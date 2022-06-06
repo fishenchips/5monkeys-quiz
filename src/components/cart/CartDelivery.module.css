@@ -26,6 +26,7 @@ div.deliveryDiv > div.deliveryChoice > img {
     border-collapse: separate; 
 }
 
+/* Only works if pressing the label */
 div.deliveryDiv > div.deliveryChoice > input:checked  + img {
     background: url("./../../assets/checkmark.png");
     background-repeat: no-repeat;
